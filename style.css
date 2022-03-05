@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+label {
+  display: block;
+  margin-top: 1em;
+}
+
+.sports {
+  margin-top: 1em;
+}
+
+input {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.column {
+  background-color: rgb(241, 238, 245);
+  min-height: 500px;
+  min-width: 250px;
+  margin: 50px 15px;
+  padding: 15px;
+  border: 1px solid black;
+  -webkit-box-shadow: 2px 1px 15px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 1px 15px 0px rgba(0, 0, 0, 0.5);
+}
+
+.gender label,
+.sports label {
+  display: inline-block;
+}
+
+#color {
+  padding: 0;
+}
+
+button {
+  position: relative;
+  left: 70%;
+  bottom: 45px;
+  background-color: rgb(101, 134, 243);
+  text-decoration: none;
+  display: inline-block;
+  text-shadow: 0px 0px 10px #4cd3d8;
+  border: 1px solid #1f6da1;
+  padding: 12px;
+  font-weight: bold;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(57, 87, 189);
+}

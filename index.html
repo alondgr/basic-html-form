@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <form action="results.html" method="GET" enctype="multipart/form-data">
+        <div class="container">
+            <div class="column column-1">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="enter name..." required />
+                </div>
+                <div>
+                    <label for="age">Age</label>
+                    <input type="number" name="age" id="age" placeholder="age..." min="1" max="200" />
+                </div>
+                <div>
+                    <label for="date">Birthdate</label>
+                    <input type="date" name="date" id="date" />
+                </div>
+                <div class="gender">Gender<div>
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="male" value="male">
+                    </div>
+                    <div>
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" id="female" value="female">
+                    </div>
+                </div>
+            </div>
+
+            <div class="column column-2">
+                <div>
+                    <label for="bio">Bio</label>
+                    <textarea id="bio" name="bio" placeholder="Write a few words about yourself..."></textarea>
+                </div>
+                <input type="hidden" name="hidden" value="secret">
+                <div>
+                    <div>
+                        <label for="file">File</label>
+                        <input type="file" id="file" name="file" />
+                    </div>
+                    <div>
+                        <label for="phone">Phone</label>
+                        <input type="tel" name="url" id="url">
+                    </div>
+                    <div>
+                        <label for="url">Website</label>
+                        <input type="url" name="phone" id="phone">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="enter email..." required />
+                    </div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="enter password..." required />
+                </div>
+            </div>
+
+            <div class="column column-3">
+                <div class="sports">
+                    Favorite Sport
+                    <div>
+                        <label for="soccer">Soccer</label>
+                        <input type="checkbox" name="soccer" id="soccer">
+                    </div>
+                    <div>
+                        <label for="football">Football</label>
+                        <input type="checkbox" name="football" id="football">
+                    </div>
+                    <div>
+                        <label for="baseball">Baseball</label>
+                        <input type="checkbox" name="baseball" id="baseball">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="car">Favorite Car brand</label>
+                        <select name="car" id="car" multiple>
+                            <option value="ford">Ford</option>
+                            <option label="Mazda">Mazda</option>
+                            <option value="toyota">Toyota</option>
+                            <option label="Chevrolet"></option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="color">Favorite color</label>
+                        <input type="color" name="color" id="color" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
